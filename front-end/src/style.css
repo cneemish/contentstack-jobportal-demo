@@ -18,17 +18,19 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     /* Calculate remaining height: 100vh (viewport height) - padding-top on body */
-    min-height: calc(100vh - 70px);
+    min-height: 100vh;
     padding: 20px; /* Add some padding around the list group */
     box-sizing: border-box;
+    background: #f6f8fa; /* Optional: matches your screenshot */
 }
 
 /* Styling for the centered list group container */
 .centered-list-group {
+    min-width: 320px;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 16px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07); /* Soft shadow for depth */
     width: 100%;
     max-width: 450px; /* Limit the maximum width for better readability */
 }
