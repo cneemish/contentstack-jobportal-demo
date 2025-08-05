@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif; /* Assuming Inter font is linked in public/index.html */
+    margin: 0;
+    background-color: #f0f2f5; /* Light background for the page */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the fixed navbar */
+/* The default Bootstrap Navbar height is around 56px, adding a bit extra for spacing */
+body {
+    padding-top: 70px; /* Adjust this value if your Navbar height changes */
+}
+
+/* Main content area to center the list group */
+.main-content-area {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* Calculate remaining height: 100vh (viewport height) - padding-top on body */
+    min-height: calc(100vh - 70px);
+    padding: 20px; /* Add some padding around the list group */
+    box-sizing: border-box;
+}
+
+/* Styling for the centered list group container */
+.centered-list-group {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 450px; /* Limit the maximum width for better readability */
+}
+
+/* Custom styles for ListGroup items to enhance appearance */
+.list-group-item {
+    border-radius: 8px !important; /* Override Bootstrap's default for more rounded corners */
+    margin-bottom: 8px; /* Space between items */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0; /* No margin after the last item */
+}
+
+.list-group-item.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+}
+
+.list-group-item:hover:not(.active):not(.disabled) {
+    background-color: #e9ecef; /* Light grey on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    cursor: pointer;
+}
+
+.list-group-item.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Navbar specific styling */
+.custom-navbar-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Shadow for the navbar */
+}
+
+.custom-navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #007bff !important; /* Make brand stand out */
+}
