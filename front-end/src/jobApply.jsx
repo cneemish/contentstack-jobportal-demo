@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import your custom CSS file
 import "./style.css"; // This line imports the CSS into your component's scope
+import { Link } from "react-router-dom";
 
 // Import React-Bootstrap components
 import Container from "react-bootstrap/Container";
@@ -14,6 +15,7 @@ import Button from "react-bootstrap/Button";
 import CseOne from "./CseOne.jsx"; // Import your CseOne component
 import CseOneLevelTwo from "./cseOneLevelTwo.jsx";
 import InternCse from "./InternCse.jsx";
+import ApplyForm from "./applyForm.jsx";
 
 // The main App component that will render the JobApply component.
 // This is typically in App.js or index.js
@@ -45,12 +47,18 @@ function JobApply() {
       >
         <Container>
           <Navbar.Brand href="#home" className="custom-navbar-brand">
-            React-Bootstrap
+            <img
+              src="https://images.contentstack.io/v3/assets/bltef575fdb3004f596/blt575482496cf46eb8/68933ca3ef8ef14a4bcbcf83/Stack_[Clearspace].png"
+              alt="Logo"
+              style={{ height: "40px", width: "auto" }}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Apply Job</Nav.Link>
+              <Nav.Link as={Link} to="/">
+                Apply Job
+              </Nav.Link>
               <Nav.Link href="#link">About Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
