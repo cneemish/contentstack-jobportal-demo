@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@contentstack/json-rte-serializer": "^3.0.3",
     "bootstrap": "^5.3.7",
+    "contentstack": "^3.26.2",
+    "dotenv": "^17.2.1",
     "formik": "^2.4.6",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
