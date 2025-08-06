@@ -1,0 +1,24 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/cneemish/contentstack-jobportal-demo#readme",
+  "bugs": {
+    "url": "https://github.com/cneemish/contentstack-jobportal-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cneemish/contentstack-jobportal-demo.git"
+  },
+  "license": "ISC",
+  "author": "neemish",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}
